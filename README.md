@@ -23,3 +23,9 @@
 
 - শব্দ-বানান তথ্যগত (factual) ডেটা। hunspell bn_BD: LGPL/GPL/MPL ট্রাই-লাইসেন্স।
 - মূল্যায়ন করে বাদ দেওয়া উৎস: MinhasKamal/BengaliDictionary (শুধু GPL-3.0), tahmid02016/bangla-wordlist (ওয়েব-ক্রল নয়েজ — ৩,০৪৭টি পরিচিত ভুল বানান ভেতরে পাওয়া গেছে), Dakshina (লাইসেন্স অস্পষ্ট)।
+
+## অভিধান ডেটা (বানান আন্দোলনের মতো পূর্ণাঙ্গ)
+- `dict/<hex>.json` — ৫০,১৩৪ শব্দের পূর্ণাঙ্গ অভিধান, প্রথম অক্ষর অনুযায়ী ভাগ করা (ফাইলের নাম = প্রথম অক্ষরের Unicode hex, যেমন `0985.json` = অ)
+- প্রতি এন্ট্রি: `w` (শব্দ), `u` (উচ্চারণ), `s` (উৎস), `o` (অর্থ)
+- উৎস: Banan Andolon app-এর ডেটা; `(অশুদ্ধ)` এন্ট্রি বাদ
+- ব্যবহার: সার্চে শব্দের প্রথম অক্ষরের hex বের করে `https://raw.githubusercontent.com/habibullahnaiem/bangla-spellcheck-dict/master/dict/<hex>.json` ফেচ করো
